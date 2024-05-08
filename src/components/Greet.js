@@ -5,4 +5,4 @@ import React from 'react'
 //}
 const Greet = () => <h1>What's Up Brother</h1>
 
-export default Greet 
+export default Greet  
