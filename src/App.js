@@ -11,7 +11,7 @@ function App() {
     <Message />
       {/*<Greet /> */}
       {/*<Welcome /> */}
-      <Hello />
+      {/*<Hello /> */}
     </div>
   );
 }

@@ -1,11 +1,21 @@
 import React ,{Component} from 'react'
 
 class Message extends Component{
+
+    constructor(){
+        super()
+        this.state = {
+            message:'Welcome Visitor'
+        }
+    }
     render(){
         return(
+            <div>          
             <h1>
-                Welcome {this.props.name} a.k.a {this.props.heroName}
+               {this.state.message}
             </h1>
+            <button> Subscribe</button>
+            </div>
         )
     }
 }
