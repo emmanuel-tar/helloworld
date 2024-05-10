@@ -9,21 +9,38 @@ import React, { Component } from 'react'
          count: 0 
       }
     }
+    
     increment(){
+      /*
         // eslint-disable-next-line react/no-direct-mutation-state
         //this.state.count = this.state.count +1
         this.setState({
           count:this.state.count + 1
         }, ()=> {console.log('Callback value',this.state.count)})
         console.log(this.state.count)
+    }
+*/
+this.setState((preState, props) => ({
+  count : preState.count + 1
+}))
+console.log(this.state.count)
+    }
 
+
+
+    incrementFive(){
+      this.increment()
+      this.increment()
+      this.increment()
+      this.increment()
+      this.increment()
     }
 
   render() {
     return (
       <div>
         <div>count - {this.state.count}</div>
-        <button onClick={ () => this.increment()}>Increment</button>
+        <button onClick={ () => this.incrementFive()}>Increment</button>
       </div>
     )
   }
