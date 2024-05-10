@@ -4,11 +4,13 @@ import Greet from './components/Greet.js'
 import Welcome from './components/Welcome.js'
 import Hello from './components/Hello.js'
 import Message from './components/Message.js';
+import Counter from './components/Counter.js';
 
 function App() {
   return (
     <div className="App">
-    <Message />
+    {/*<Message /> */}
+    <Counter />
       {/*<Greet /> */}
       {/*<Welcome /> */}
       {/*<Hello /> */}
